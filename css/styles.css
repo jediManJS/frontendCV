@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    font-size: 14px;
+    color: #222222;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+body * { box-sizing: border-box }
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
