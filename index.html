@@ -6,11 +6,104 @@
     <title>Alexey Strelnikov CV</title>
     <link rel="icon" href="favicon.ico">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:500,800" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-
+<header>
+    <div class="header-wrapper">
+        <div class="logo-holder">
+            <img src="images/logo.jpg" alt="HTML&CSS&JS">
+        </div>
+        <nav class="navigation">
+            <a href="#summary" class="top-nav">Summary</a>
+            <a href="#skills" class="top-nav">Skills</a>
+            <a href="#experience" class="top-nav">Experience</a>
+            <a href="#" class="top-nav">Education</a>
+            <a href="#" class="top-nav">Mentor&Speaker</a>
+        </nav>
     </div>
+</header>
+<div class="wrapper">
+    <div id="summary">
+        <h2 class="section-heading"><span>Summary</span></h2>
+        <p>
+            <span class="image-holder"><img src="images/me1.jpg" alt="Alexey Strelnikov"></span>
+            Hello, my name is Alexey and I'm quick-learning frontend developer with a good understanding of all phases of web development life cycle.
+            Experienced in design and development of web applications. Dedicated to staying current with new technologies and applying them to resolve diverse client needs.
+        </p>
+    </div>
+    <div id="skills">
+        <h2 class="section-heading"><span>Skills</span></h2>
+        <div class="skills-holder">
+            <div>
+                <h3 class="sub-heading">Technical Skills</h3>
+                <ul>
+                    <li>Javascript(ES5, ES2015, ES6)</li>
+                    <li>Typescript</li>
+                    <li>HTML5</li>
+                    <li>CSS(CSS3, SASS, LESS)</li>
+                    <li>Gulp, grunt, webpack</li>
+                    <li>AJAX/JSON/HTTP/REST</li>
+                    <li>UI/UX(Bootstrap, Foundation Framework)</li>
+                    <li>Git/SVN/TFS</li>
+                    <li>Angular (2-6)</li>
+                    <li>Angular cli</li>
+                    <li>Angular material</li>
+                    <li>jQuery</li>
+                    <li>NPM/Bower</li>
+                    <li>Debugging tools</li>
+                    <li>Design patterns</li>
+                    <li>OOP</li>
+                    <li>Responsive web design</li>
+                    <li>Webstorm</li>
+                    <li>Photoshop</li>
+                    <li>Balsamiq</li>
+                    <li>XML</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="sub-heading">Soft Skills</h3>
+                <ul>
+                    <li>Communicable</li>
+                    <li>Team player</li>
+                    <li>Quick responsiveness</li>
+                    <li>Mentoring skills</li>
+                    <li>Speaker Skills</li>
+                    <li>Responsible Person</li>
+                    <li>Ability to explain and teach to young generation</li>
+                    <li>Self Motivation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="experience">
+        <h2 class="section-heading"><span>Experience</span></h2>
+        <p>
+            Currently more then 8 years experience in frontend development. Survived with IE6, IE7, IE8(it was dark time). Now focused on JS-frameworks
+            frontend development. I adore a TypeScript, ES6, Angular(2-6) and all modern UI features like "CSS Grid Layout Module", "FlexibleBox Layout Module"
+            and so on. I'm sharing knowledges with other developers. Teaching in <a href="http://a-level.com.ua/teachers/" target="_blank">#A-LevelUkraine
+            IT-school</a> on "Frontend-Advanced" curse. I'm giving presentations on <a href="https://www.facebook.com/KharkivFrontend/" target="_blank">
+            #KharkivFrontendMeetup</a>, <a href="https://www.facebook.com/itkharkov/" target="_blank">#KharkivITCluster</a> and sometimes in a IT-companies
+            like - <a href="https://www.facebook.com/events/2083460251883122/" target="_blank">#Ciklum</a>.
+        </p>
+    </div>
+</div>
+<button onclick="topFunction()" id="topButton" title="To top">
+    <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDI4NC45MjkgMjg0LjkyOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg0LjkyOSAyODQuOTI5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTI4Mi4wODIsMTk1LjI4NUwxNDkuMDI4LDYyLjI0Yy0xLjkwMS0xLjkwMy00LjA4OC0yLjg1Ni02LjU2Mi0yLjg1NnMtNC42NjUsMC45NTMtNi41NjcsMi44NTZMMi44NTYsMTk1LjI4NSAgIEMwLjk1LDE5Ny4xOTEsMCwxOTkuMzc4LDAsMjAxLjg1M2MwLDIuNDc0LDAuOTUzLDQuNjY0LDIuODU2LDYuNTY2bDE0LjI3MiwxNC4yNzFjMS45MDMsMS45MDMsNC4wOTMsMi44NTQsNi41NjcsMi44NTQgICBjMi40NzQsMCw0LjY2NC0wLjk1MSw2LjU2Ny0yLjg1NGwxMTIuMjA0LTExMi4yMDJsMTEyLjIwOCwxMTIuMjA5YzEuOTAyLDEuOTAzLDQuMDkzLDIuODQ4LDYuNTYzLDIuODQ4ICAgYzIuNDc4LDAsNC42NjgtMC45NTEsNi41Ny0yLjg0OGwxNC4yNzQtMTQuMjc3YzEuOTAyLTEuOTAyLDIuODQ3LTQuMDkzLDIuODQ3LTYuNTY2ICAgQzI4NC45MjksMTk5LjM3OCwyODMuOTg0LDE5Ny4xODgsMjgyLjA4MiwxOTUuMjg1eiIgZmlsbD0iIzU1NzRiMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+</button>
+<script type="application/javascript">
+    window.onscroll = function() { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topButton").style.display = "flex";
+        } else {
+            document.getElementById("topButton").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
 </body>
 </html>

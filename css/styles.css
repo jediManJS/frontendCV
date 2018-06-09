@@ -1,8 +1,8 @@
 body {
     margin: 0 auto;
-    padding: 0;
+    padding: 99px 0 0 0;
     height: 100%;
-    font-size: 14px;
+    font-size: 18px;
     color: #222222;
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
@@ -10,12 +10,152 @@ body {
 body * { box-sizing: border-box }
 a {
     color: #000000;
-    text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 img {
     width: auto;
     max-width: 100%;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    color: #000000;
+}
+p {
+    margin: 0;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+header::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #CCCCCC;
+    position: absolute;
+    width: 100%;
+    top: 99px;
+}
+.header-wrapper {
+    position: relative;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 14px 14px -4px rgba(255,255,255,0.75);
+    margin: 0 auto;
+    padding: 12px 18px;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-holder {
+    line-height: 16px;
+}
+.logo-holder img {
+    height: 76px;
+}
+nav.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+nav.navigation a {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5574b0;
+    padding: 0 12px;
+    text-decoration: none;
+}
+nav.navigation a:last-of-type {
+    padding-right: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1024px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    padding: 18px 12px;
+    position: relative;
+}
+h2.section-heading {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+h2.section-heading span {
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 0 24px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+h2.section-heading::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    top: 51%;
+}
+#summary .image-holder {
+    float: left;
+    margin: 0 12px 12px 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.skills-holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.skills-holder ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 36px;
+    right: 48px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    opacity: 0.6;
+    color: #5574b0;
+    justify-content: center;
+    align-items: center;
+}
+#topButton:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1060px) {
+    .wrapper,
+    .header-wrapper {
+        width: 100%;
+        border: none;
+    }
+    .wrapper {
+        padding-right: 32px;
+    }
+    #topButton { right: 0 }
+    header::before { display: none }
 }
