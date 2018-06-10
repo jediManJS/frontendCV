@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 99px 0 0 0;
     height: 100%;
-    font-size: 18px;
+    font-size: 19px;
     color: #333333;
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
@@ -25,6 +25,8 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 p {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 18px;
     margin: 0;
     padding-bottom: 12px;
     overflow: hidden;
@@ -73,11 +75,10 @@ nav.navigation {
     justify-content: space-between;
 }
 nav.navigation a {
-    font-family: Arial, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #667ec1;
+    color: #017dc7;
     padding: 0 12px;
     text-decoration: none;
     transition: color .5s;
@@ -106,7 +107,7 @@ h2.section-heading span {
     background-color: #FFFFFF;
     position: relative;
     padding: 0 24px;
-    font-size: 36px;
+    font-size: 34px;
     text-transform: uppercase;
 }
 h2.section-heading::before {
@@ -137,13 +138,15 @@ h2.section-heading::before {
     margin-top: 6px;
 }
 .skills-holder ul li {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 18px;
     line-height: 23px;
 }
 h3 {
+    color: #333333;
     text-align: center;
     padding: 6px 0 12px 0;
-    color: #444444;
-    font-size: 30px;
+    font-size: 28px;
 }
 .company-holder {
     padding-bottom: 12px;
@@ -175,7 +178,7 @@ h4.company-position a {
 .project > strong {
     display: block;
     text-transform: uppercase;
-    padding: 6px 0;
+    padding: 6px 0 12px 0;
 }
 .education-item {
     font-size: 22px;
@@ -289,7 +292,6 @@ h4.company-position a {
         height: 124px;
     }
     .header-wrapper nav a {
-        font-size: 14px;
         padding: 6px;
     }
     .social-holder {
@@ -303,12 +305,22 @@ h4.company-position a {
 @media screen and (max-width: 600px) {
     .header-wrapper nav a {
         padding: 6px 3px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .gallery-item {
         width: 100%;
     }
     .connection {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header-wrapper nav a {
+        padding: 6px 2px;
+        font-size: 13px;
+    }
+    h2.section-heading span {
+        font-size: 30px;
+        padding: 0 12px;
     }
 }
