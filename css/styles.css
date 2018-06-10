@@ -183,7 +183,65 @@ h4.company-position a {
     color: #777777;
     font-size: 16px;
 }
-
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.gallery-item {
+    width: 48%;
+    position: relative;
+    text-align: center;
+    margin: 12px 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.item-shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 48px 0 rgba(255, 255, 255, 1);
+}
+.social-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.social-holder a {
+    width: 30%;
+    text-align: center;
+}
+.social-holder a span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 3px;
+}
+.social-holder a img {
+    height: 60px;
+}
+.connection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.connection a,
+.connection div {
+    display: flex;
+    align-items: center;
+}
+.connection span {
+    padding-left: 18px;
+}
+.connection img {
+    height: 60px;
+}
 #topButton {
     display: none;
     position: fixed;
