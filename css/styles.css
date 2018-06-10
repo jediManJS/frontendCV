@@ -30,6 +30,10 @@ p {
     overflow: hidden;
     line-height: 23px;
 }
+#menuToggler,
+.mobile-list {
+    display: none;
+}
 header {
     position: fixed;
     left: 0;
@@ -235,6 +239,7 @@ h4.company-position a {
 .connection div {
     display: flex;
     align-items: center;
+    padding-bottom: 12px;
 }
 .connection span {
     padding-left: 18px;
@@ -274,4 +279,35 @@ h4.company-position a {
     #topButton { right: 0 }
     header::before { display: none }
     .header-wrapper { border-bottom: 1px solid #CCCCCC }
+}
+@media screen and (max-width: 890px) {
+    body {
+        padding-top: 124px;
+    }
+    .header-wrapper {
+        flex-direction: column;
+        height: 124px;
+    }
+    .header-wrapper nav a {
+        padding: 6px;
+    }
+    .social-holder {
+        flex-wrap: wrap;
+    }
+    .social-holder a {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-wrapper nav a {
+        padding: 6px 3px;
+        font-size: 12px;
+    }
+    .gallery-item {
+        width: 100%;
+    }
+    .connection {
+        flex-direction: column;
+    }
 }

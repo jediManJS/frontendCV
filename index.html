@@ -19,7 +19,7 @@
             <a href="#skills" class="top-nav">Skills</a>
             <a href="#experience" class="top-nav">Experience</a>
             <a href="#education" class="top-nav">Education</a>
-            <a href="#hobbies" class="top-nav">Hobbies&Photos</a>
+            <a href="#hobbies" class="top-nav">Hobbies</a>
             <a href="#social" class="top-nav">Social</a>
         </nav>
     </div>
@@ -27,7 +27,7 @@
 <div class="wrapper">
     <div id="summary">
         <h2 class="section-heading"><span>Summary</span></h2>
-        <p>
+        <p id="skills">
             <span class="image-holder"><img src="images/me1.jpg" alt="Alexey Strelnikov"></span>
             Hello, my name is Alexey and I'm quick-learning frontend developer with a good understanding of all phases of web development life cycle.
             Experienced in design and development of web applications. Dedicated to staying current with new technologies and applying them to resolve
@@ -37,7 +37,7 @@
             Teaching in <a href="http://a-level.com.ua/teachers/" target="_blank">#A-LevelUkraine IT-school</a> in "Frontend-Advanced" class. I'm giving presentations on <a href="https://www.facebook.com/KharkivFrontend/" target="_blank">#KharkivFrontendMeetup</a>, <a href="https://www.facebook.com/itkharkov/" target="_blank">#KharkivITCluster</a> and sometimes in a IT-companies like - <a href="https://www.facebook.com/events/2083460251883122/" target="_blank">#Ciklum</a>.
         </p>
     </div>
-    <div id="skills">
+    <div class="skills-container">
         <h2 class="section-heading"><span>Skills</span></h2>
         <div class="skills-holder">
             <div>
@@ -78,10 +78,11 @@
                     <li>Ability to explain and teach to young generation</li>
                     <li>Self Motivation</li>
                 </ul>
+                <div id="experience"></div>
             </div>
         </div>
     </div>
-    <div id="experience">
+    <div class="experience-holder">
         <h2 class="section-heading"><span>Experience</span></h2>
         <p>
             Currently more then 8 years experience in frontend development. Survived with IE6, IE7, IE8(it was dark time). Now focus is on JS-frameworks in
@@ -154,7 +155,7 @@
                 <p>
                     <strong>Project Description:</strong> Company based on CMS solutions for small and big online business. Company developed own eCommerce
                     CMS - <a href="https://www.trueloaded.com/" target="_blank">Trueloaded</a>.<br/><br/>
-                    <strong>Role:</strong> Web developer. All phases of project life cycle from design implementation to server settings, upgrading plugins,
+                    <strong id="education">Role:</strong> Web developer. All phases of project life cycle from design implementation to server settings, upgrading plugins,
                     features implementing, setting projects.<br/>
                     <strong>Team:</strong> 5 Developers, 1 QA, 3 Designers.<br/>
                     <strong>Tools/Technologies:</strong> PHPStorm, HTML, CSS, XML, Photoshop, jQuery, PHP, MySQL.
@@ -162,7 +163,7 @@
             </div>
         </div>
     </div>
-    <div id="education">
+    <div class="education-holder">
         <h2 class="section-heading"><span>Education</span></h2>
         <div class="education-item">
             <strong>1st - Master of Computer Applications (M.C.A.), Computer systems and roboto-technic | Kharkiv National University of
@@ -176,14 +177,14 @@
         <div class="education-item">
             <strong>English (written/speaking)</strong>- Intermediate.
         </div>
-        <div class="education-item">
+        <div class="education-item" id="hobbies">
             <strong>Ukrainian</strong>- Native.
         </div>
         <div class="education-item">
             <strong>Russian</strong>- Native.
         </div>
     </div>
-    <div id="hobbies">
+    <div class="hobbies-holder">
         <h2 class="section-heading"><span>Hobbies</span></h2>
         <p>
             From childhood I play in voleyball. In high school played in professional voleyball team - "Lokovotiv Kharkiv". Have a lot medals and prises.
