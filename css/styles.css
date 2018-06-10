@@ -73,9 +73,13 @@ nav.navigation a {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #5574b0;
+    color: #667ec1;
     padding: 0 12px;
     text-decoration: none;
+    transition: color .5s;
+}
+nav.navigation a:hover {
+    color: #272c7c;
 }
 nav.navigation a:last-of-type {
     padding-right: 0;
@@ -142,7 +146,8 @@ h3 {
     margin-bottom: 18px;
     border-bottom: 1px solid #CCCCCC;
 }
-.company-holder:last-of-type {
+.company-holder:last-of-type,
+.education-item:last-of-type {
     border-bottom: none;
 }
 h4.company-position {
