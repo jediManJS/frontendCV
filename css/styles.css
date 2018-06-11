@@ -261,7 +261,7 @@ h4.company-position a {
     border: none;
     cursor: pointer;
     box-shadow: none;
-    opacity: 0.6;
+    opacity: 0.7;
     color: #5574b0;
     justify-content: center;
     align-items: center;
@@ -305,7 +305,10 @@ h4.company-position a {
 @media screen and (max-width: 600px) {
     .header-wrapper nav a {
         padding: 6px 3px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .skills-holder {
+        flex-direction: column;
     }
     .gallery-item {
         width: 100%;
@@ -317,10 +320,14 @@ h4.company-position a {
 @media screen and (max-width: 400px) {
     .header-wrapper nav a {
         padding: 6px 2px;
-        font-size: 13px;
+        font-size: 15px;
     }
     h2.section-heading span {
         font-size: 30px;
         padding: 0 12px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 26px;
     }
 }
