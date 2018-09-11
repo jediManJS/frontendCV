@@ -8,12 +8,8 @@ body {
     font-weight: 500;
 }
 body * { box-sizing: border-box }
-a {
-    color: #000000;
-}
-a:hover {
-    text-decoration: none;
-}
+a { color: #000000 }
+a:hover { text-decoration: none }
 img {
     width: auto;
     max-width: 100%;
