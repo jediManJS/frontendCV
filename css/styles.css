@@ -116,6 +116,7 @@ h2.section-heading::before {
     height: 2px;
     background-color: #000000;
     top: 51%;
+    left: 0;
 }
 #summary .image-holder {
     float: left;
