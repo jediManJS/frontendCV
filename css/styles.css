@@ -62,9 +62,11 @@ header::before {
 }
 .logo-holder {
     line-height: 16px;
+    transition: all 0.5s;
 }
 .logo-holder img {
     height: 76px;
+    transition: all 0.5s;
 }
 nav.navigation {
     display: flex;
@@ -296,6 +298,22 @@ h4.company-position a {
     .social-holder a {
         width: 100%;
         margin-bottom: 12px;
+    }
+    body.scrolled {
+        padding-top: 66px;
+    }
+    .scrolled .header-wrapper {
+        height: 60px;
+        justify-content: flex-start;
+    }
+    .scrolled .logo-holder {
+        line-height: 0;
+    }
+    .scrolled .logo-holder img {
+        height: 0;
+    }
+    .scrolled .header-wrapper nav a {
+        padding: 0 6px;
     }
 }
 @media screen and (max-width: 600px) {

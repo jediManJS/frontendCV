@@ -57,6 +57,7 @@
                     <li>Angular (2-6)</li>
                     <li>Angular cli</li>
                     <li>Angular material</li>
+                    <li>NgRx</li>
                     <li>jQuery</li>
                     <li>NPM/Bower</li>
                     <li>Debugging tools</li>
@@ -98,7 +99,17 @@
                 <span>Position - Javascript Developer</span>
             </h4>
             <div class="project">
-                <strong>Project name - <a href="https://www.realscape.io/" target="_blank">RealScape</a> (February 2018 - Present Time)</strong>
+                <strong>NDA Project (Jun 2018 - December 2018)</strong>
+                <p>
+                    <strong>Project Description:</strong> Complex internal tool for automotive industry for collaboration between manufacturers and linguistic agencies<br/><br/>
+                    <strong>Role:</strong>Front-end developer.<br/>
+                    <strong>Responsibilities:</strong> Integrating 3rd-party linguistic services, Developing new modules for text analysis, Working on UI consistency, Fixing bugs.<br/>
+                    <strong>Team:</strong> 5 frontend developer, 3(Java) backend developers, Manager/Scrum master.<br/>
+                    <strong>Tools/Technologies:</strong> Angular 5, TreeGrid, Flex GUI (custom module), Quill Rich Text Editor, ngrx, RxJS, Angular Material, ngx-translate, ngx-datatable, angular2-hotkeys, SheetJS.
+                </p>
+            </div>
+            <div class="project">
+                <strong>Project name - <a href="https://www.realscape.io/" target="_blank">RealScape</a> (February 2018 - Jun 2018)</strong>
                 <p>
                     <strong>Project Description:</strong> <a href="https://www.realscape.io/" target="_blank">RealScape</a> is a tool that allows you to
                     create a digital twin of a real-world place or a thing and associate it with the real-world object using geolocation, QR, bar code and image recognition. This way you can attach digital content to that object, share it with others and digitally communicate with the right people and things. RealScape is New Zealand startup based on VR/AR features.<br/><br/>
@@ -108,7 +119,7 @@
                 </p>
             </div>
             <div class="project">
-                <strong>Project name - <a href="http://www.parkopoly.fr/" target="_blank">PARKOPOLY</a> (March 2017 - February 2018)</strong>
+                <strong>Project name - <a href="http://www.parkopoly.fr/" target="_blank">PARKOPOLY</a> (Jun 2017 - February 2018)</strong>
                 <p>
                     <strong>Project Description:</strong> Back office application for a company, which provides people with car transportations (between
                     client and point of sales). The main purpose of the application is to create new missions (transportations) with amount of information,
@@ -264,8 +275,10 @@
     window.onscroll = function() { scrollFunction() };
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.body.classList.add('scrolled');
             document.getElementById("topButton").style.display = "block";
         } else {
+            document.body.classList.remove('scrolled');
             document.getElementById("topButton").style.display = "none";
         }
     }
