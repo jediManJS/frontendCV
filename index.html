@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:500,800" rel="stylesheet">
 </head>
 <body>
-<header>
+<div class="logo only-for-print">
+    <img src="images/logo.jpg" alt="HTML&CSS&JS">
+</div>
+<header class="not-for-print">
     <div class="header-wrapper">
         <div class="logo-holder">
             <img src="images/logo.jpg" alt="HTML&CSS&JS">
@@ -115,7 +118,7 @@
                     <strong>Tools/Technologies:</strong> Angular 8, NvD3(D3.js), NgRx, Bootstrap, PrimeNG.
                 </p>
             </div>
-            <div class="project">
+            <div class="project break-page-before">
                 <strong>Project name - <a href="https://upbook.com/" target="_blank">UpBook</a> (December 2018 - May 2019)</strong>
                 <p>
                     <strong>Project Description:</strong> We record and scorecard your new client calls so you always know how many calls turn into appointments and exactly what your Front Desk is saying.<br/><br/>
@@ -204,7 +207,7 @@
             </div>
         </div>
     </div>
-    <div class="education-holder">
+    <div class="education-holder break-page-before">
         <h2 class="section-heading"><span>Education</span></h2>
         <div class="education-item">
             <strong>1st - Master of Computer Applications (M.C.A.), Computer systems and roboto-technic | Kharkiv National University of
@@ -225,7 +228,7 @@
             <strong>Russian</strong>- Native.
         </div>
     </div>
-    <div class="hobbies-holder">
+    <div class="hobbies-holder not-for-print">
         <h2 class="section-heading"><span>Hobbies</span></h2>
         <p>
             I've played volleyball since childhood. In high school I played in professional volleyball team - "Lokomotiv Kharkiv". I have a lot of medals and
@@ -295,9 +298,12 @@
         </div>
     </div>
 </div>
-<button onclick="topFunction()" id="topButton" title="To top">
+<button onclick="topFunction()" id="topButton" class="not-for-print" title="To top">
     <img src="./images/top.svg" width="32" height="32" alt="To Top" />
 </button>
+<a href="./images/AlexeyStrelnikovCV2020.pdf" download id="downloadButton" class="not-for-print" title="Download PDF file">
+    <img src="./images/downloadPDF.svg" alt="Download PDF file" />
+</a>
 <script type="application/javascript">
     window.onscroll = function() { scrollFunction() };
     function scrollFunction() {

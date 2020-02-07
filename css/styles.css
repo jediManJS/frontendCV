@@ -31,6 +31,9 @@ p {
     overflow: hidden;
     line-height: 23px;
 }
+.only-for-print {
+    display: none;
+}
 #menuToggler,
 .mobile-list {
     display: none;
@@ -268,11 +271,75 @@ h4.company-position a {
     box-shadow: none;
     opacity: 0.7;
     color: #5574b0;
-    justify-content: center;
-    align-items: center;
+    outline: none;
 }
 #topButton:hover {
     opacity: 1;
+}
+#downloadButton {
+    position: fixed;
+    top: 6px;
+    right: 30px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0.75;
+    background-color: #FFFFFF;
+    color: #149741;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    z-index: 10;
+}
+#downloadButton img {
+    width: 75px;
+}
+#downloadButton:hover {
+    opacity: 1;
+}
+#downloadButton:hover::before {
+    display: block;
+    content: 'Download as PDF';
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 6px 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 85px;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1275px) {
+    #downloadButton {
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #downloadButton {
+        top: 100px;
+    }
+    #downloadButton img {
+        width: 50px;
+    }
+    #downloadButton:hover::before {
+        top: 40px;
+        padding: 6px;
+        border-radius: 3px;
+        width: auto;
+        max-width: 85px;
+    }
+}
+
+@media screen and (max-width: 1205px) {
+    #topButton, #downloadButton { right: 3px }
 }
 
 @media screen and (max-width: 1060px) {
@@ -284,7 +351,7 @@ h4.company-position a {
     .wrapper {
         padding-right: 32px;
     }
-    #topButton { right: 0 }
+    #topButton, #downloadButton { right: 0 }
     header::before { display: none }
     .header-wrapper { border-bottom: 1px solid #CCCCCC }
 }
@@ -322,6 +389,12 @@ h4.company-position a {
     .scrolled .header-wrapper nav a {
         padding: 0 6px;
     }
+    #downloadButton {
+        top: 126px;
+    }
+    body.scrolled #downloadButton {
+        top: 60px;
+    }
 }
 @media screen and (max-width: 600px) {
     .header-wrapper nav a {
@@ -350,5 +423,46 @@ h4.company-position a {
     }
     h3 {
         font-size: 26px;
+    }
+}
+@media print {
+    @page {
+        margin: 0 !important;
+        size: A4 landscape;
+    }
+    body {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+    body * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .only-for-print {
+        display: block !important;
+    }
+    .not-for-print {
+        display: none !important;
+    }
+    .break-page-before {
+        page-break-before: always !important;
+    }
+    .logo.only-for-print {
+        position: fixed;
+        top: 12px;
+        left: 8px;
+    }
+    .logo.only-for-print img {
+        height: 36px;
+    }
+    body .wrapper {
+        width: 80%;
+        border-left: none;
+        border-right: none;
+        padding: 0;
+    }
+    body .wrapper a {
+        text-decoration: none;
     }
 }
