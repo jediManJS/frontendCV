@@ -278,7 +278,7 @@ h4.company-position a {
 }
 #downloadButton {
     position: fixed;
-    top: 6px;
+    top: 18px;
     right: 30px;
     padding: 0;
     margin: 0;
@@ -292,7 +292,7 @@ h4.company-position a {
     z-index: 10;
 }
 #downloadButton img {
-    width: 75px;
+    width: 60px;
 }
 #downloadButton:hover {
     opacity: 1;
@@ -322,24 +322,24 @@ h4.company-position a {
     }
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1205px) {
+    #topButton, #downloadButton { right: 3px }
+}
+
+@media screen and (max-width: 1135px) {
     #downloadButton {
         top: 100px;
     }
     #downloadButton img {
-        width: 50px;
+        width: 48px;
     }
     #downloadButton:hover::before {
-        top: 40px;
+        top: 44px;
         padding: 6px;
         border-radius: 3px;
         width: auto;
         max-width: 85px;
     }
-}
-
-@media screen and (max-width: 1205px) {
-    #topButton, #downloadButton { right: 3px }
 }
 
 @media screen and (max-width: 1060px) {
@@ -461,8 +461,5 @@ h4.company-position a {
         border-left: none;
         border-right: none;
         padding: 0;
-    }
-    body .wrapper a {
-        text-decoration: none;
     }
 }
