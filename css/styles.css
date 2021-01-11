@@ -286,7 +286,7 @@ h4.company-position a {
     opacity: 0.75;
     background-color: #FFFFFF;
     color: #149741;
-    display: block;
+    display: flex;
     outline: none;
     text-decoration: none;
     z-index: 10;
@@ -297,22 +297,30 @@ h4.company-position a {
 #downloadButton:hover {
     opacity: 1;
 }
-#downloadButton:hover::before {
+#downloadButton::before {
+    width: 0;
     display: block;
     content: 'Download as PDF';
+    box-sizing: border-box;
     position: absolute;
     top: 60px;
     right: 0;
     background-color: #FFFFFF;
-    padding: 6px 8px;
-    border: 1px solid #CCCCCC;
+    padding: 6px 0;
     border-radius: 6px;
     font-size: 12px;
-    width: 85px;
     color: #333333;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: width .3s ease-out;
+    text-align: center;
+    opacity: .88;
+    z-index: 0;
+}
+#downloadButton:hover::before {
+    width: 100px;
+    border: 1px solid #CCCCCC;
     z-index: 10;
 }
 
@@ -333,12 +341,9 @@ h4.company-position a {
     #downloadButton img {
         width: 48px;
     }
-    #downloadButton:hover::before {
-        top: 44px;
-        padding: 6px;
-        border-radius: 3px;
-        width: auto;
-        max-width: 85px;
+    #downloadButton::before {
+        top: -28px;
+        right: 6px;
     }
 }
 
@@ -409,6 +414,23 @@ h4.company-position a {
     }
     .connection {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    p, .skills-holder ul li {
+        font-size: 16px;
+    }
+    h2.section-heading span {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4.company-position, .education-item {
+        font-size: 20px;
+    }
+    #downloadButton::before {
+        top: 48px;
     }
 }
 @media screen and (max-width: 400px) {
