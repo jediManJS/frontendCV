@@ -337,7 +337,8 @@ h4.company-position a {
 @media screen and (max-width: 1135px) {
     #downloadButton {
         top: 100px;
-        line-height: 48px;
+        line-height: 0;
+        height: 48px;
     }
     #downloadButton img {
         width: 48px;
@@ -359,9 +360,6 @@ h4.company-position a {
         padding-right: 32px;
     }
     #topButton, #downloadButton { right: 0 }
-    body #downloadButton::before {
-        display: none;
-    }
     header::before { display: none }
     .header-wrapper { border-bottom: 1px solid #CCCCCC }
 }
@@ -404,6 +402,9 @@ h4.company-position a {
     }
     body.scrolled #downloadButton {
         top: 60px;
+    }
+    body #downloadButton::before {
+        display: none;
     }
 }
 @media screen and (max-width: 600px) {
