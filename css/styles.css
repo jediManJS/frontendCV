@@ -337,6 +337,7 @@ h4.company-position a {
 @media screen and (max-width: 1135px) {
     #downloadButton {
         top: 100px;
+        line-height: 48px;
     }
     #downloadButton img {
         width: 48px;
@@ -344,6 +345,7 @@ h4.company-position a {
     #downloadButton::before {
         top: -28px;
         right: 6px;
+        line-height: 15px;
     }
 }
 
@@ -357,6 +359,9 @@ h4.company-position a {
         padding-right: 32px;
     }
     #topButton, #downloadButton { right: 0 }
+    body #downloadButton::before {
+        display: none;
+    }
     header::before { display: none }
     .header-wrapper { border-bottom: 1px solid #CCCCCC }
 }
@@ -428,9 +433,6 @@ h4.company-position a {
     }
     h4.company-position, .education-item {
         font-size: 20px;
-    }
-    #downloadButton::before {
-        top: 48px;
     }
 }
 @media screen and (max-width: 400px) {
