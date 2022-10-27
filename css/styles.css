@@ -409,6 +409,9 @@ h4.company-position a {
     body #downloadButton::before {
         display: none;
     }
+    .connection {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 600px) {
     .header-wrapper nav a {
@@ -420,9 +423,6 @@ h4.company-position a {
     }
     .gallery-item {
         width: 100%;
-    }
-    .connection {
-        flex-direction: column;
     }
 }
 @media screen and (max-width: 500px) {
