@@ -51,7 +51,7 @@ header {
     z-index: 9;
 }
 header::before {
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     background-color: #CCCCCC;
@@ -120,7 +120,7 @@ h2.section-heading span {
     text-transform: uppercase;
 }
 h2.section-heading::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -174,11 +174,15 @@ h4.company-position span {
     display: block;
     padding-bottom: 6px;
 }
+h4.company-position span:last-of-type {
+    font-size: 22px;
+    color: #666666;
+}
 h4.company-position a {
     text-transform: uppercase;
 }
 .project {
-    padding: 12px;
+    padding: 12px 6px;
     border-bottom: 1px dashed #EAEAEA;
 }
 .project:last-of-type {
@@ -437,6 +441,9 @@ h4.company-position a {
     }
     h4.company-position, .education-item {
         font-size: 20px;
+    }
+    h4.company-position span:last-of-type {
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 400px) {
